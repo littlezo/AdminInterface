@@ -1,0 +1,30 @@
+<?php
+
+/**
+* +----------------------------------------------------------------------
+* | AdminInterface
+* +----------------------------------------------------------------------
+* | Copyright (c) 2017-{%year%} https://github.com/littlezo All rights reserved.
+* +----------------------------------------------------------------------
+* | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+* +----------------------------------------------------------------------
+* | Author: @小小只 <soinco@qq.com>
+* +----------------------------------------------------------------------
+*/
+
+namespace {%namespace%};
+
+use app\BaseController;
+
+class {%class%} extends BaseController
+{
+    /**
+    * name
+    *
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+}

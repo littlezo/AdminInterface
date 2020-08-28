@@ -1,0 +1,125 @@
+<?php
+
+/**
+* +----------------------------------------------------------------------
+* | AdminInterface
+* +----------------------------------------------------------------------
+* | Copyright (c) 2017-{%year%} https://github.com/littlezo All rights reserved.
+* +----------------------------------------------------------------------
+* | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+* +----------------------------------------------------------------------
+* | Author: @小小只 <soinco@qq.com>
+* +----------------------------------------------------------------------
+*/
+
+namespace {%app%}\{%layer%};
+
+use think\facade\Request;
+use app\{%name%}\Base;
+
+class {%suffix%} extends Base
+{
+    /**
+    * 显示资源列表
+    *
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function index()
+    {
+        //
+    }
+
+    /**
+    * 显示创建资源表单页.
+    *
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function create()
+    {
+        //
+    }
+
+    /**
+    * 保存新建的资源
+    *
+    * @param  \think\Request  $request
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function save(Request $request)
+    {
+        //
+    }
+
+    /**
+    * 显示指定的资源
+    *
+    * @param  int  $id
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function read($id)
+    {
+        //
+    }
+
+    /**
+    * 显示编辑资源表单页.
+    *
+    * @param  int  $id
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+    * 保存更新的资源
+    *
+    * @param  \think\Request  $request
+    * @param  int  $id
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+    * 删除指定资源
+    *
+    * @param  int  $id
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function delete($id)
+    {
+        //
+    }
+}

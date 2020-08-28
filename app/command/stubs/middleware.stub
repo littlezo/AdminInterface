@@ -1,0 +1,41 @@
+<?php
+
+/**
+* +----------------------------------------------------------------------
+* | AdminInterface
+* +----------------------------------------------------------------------
+* | Copyright (c) 2017-{%year%} https://github.com/littlezo All rights reserved.
+* +----------------------------------------------------------------------
+* | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+* +----------------------------------------------------------------------
+* | Author: @小小只 <soinco@qq.com>
+* +----------------------------------------------------------------------
+*/
+
+namespace {%app%}\{%layer%};
+/**
+* 中间件类
+* @author  @小小只 <soinco@qq.com>
+* @version 1.0.0
+* @date    {%date%}
+* @desc    description
+*
+*/
+class {%suffix%}
+{
+    /**
+    * 处理请求
+    *
+    * @param \think\Request $request
+    * @param \Closure       $next
+    * @return Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function handle($request, \Closure $next)
+    {
+        //
+    }
+}

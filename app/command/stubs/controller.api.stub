@@ -1,0 +1,117 @@
+<?php
+
+/**
+* +----------------------------------------------------------------------
+* | AdminInterface
+* +----------------------------------------------------------------------
+* | Copyright (c) 2017-{%year%} https://github.com/littlezo All rights reserved.
+* +----------------------------------------------------------------------
+* | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+* +----------------------------------------------------------------------
+* | Author: @小小只 <soinco@qq.com>
+* +----------------------------------------------------------------------
+*/
+
+namespace {%app%}\{%layer%};
+
+use think\facade\Request;
+
+use app\{%name%}Base;
+
+class {%suffix%} extends Base
+{
+    protected function initialize()
+    {
+        parent::initialize();
+    }
+
+    /**
+    * 显示资源列表
+    *
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function index()
+    {
+        return json([
+            'code' => 200,
+            'msg' => '列表'
+        ]);
+    }
+
+    /**
+    * 保存新建的资源
+    *
+    * @param  \think\Request  $request
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function save(Request $request)
+    {
+        return json([
+            'code' => 200,
+            'msg' => '新建'
+        ]);
+    }
+
+    /**
+    * 显示指定的资源
+    *
+    * @param  int  $id
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function read($id)
+    {
+        return json([
+            'code' => 200,
+            'msg' => '查询'
+        ]);
+    }
+
+    /**
+    * 保存更新的资源
+    *
+    * @param  \think\Request  $request
+    * @param  int  $id
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function update(Request $request, $id)
+    {
+        return json([
+            'code' => 200,
+            'msg' => '更新'
+        ]);
+    }
+
+    /**
+    * 删除指定资源
+    *
+    * @param  int  $id
+    * @return \think\Response
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    */
+    public function delete($id)
+    {
+        return json([
+            'code' => 200,
+            'msg' => '删除'
+        ]);
+    }
+}

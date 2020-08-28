@@ -1,0 +1,37 @@
+<?php
+
+/**
+* +----------------------------------------------------------------------
+* | AdminInterface
+* +----------------------------------------------------------------------
+* | Copyright (c) 2017-{%year%} https://github.com/littlezo All rights reserved.
+* +----------------------------------------------------------------------
+* | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+* +----------------------------------------------------------------------
+* | Author: @小小只 <soinco@qq.com>
+* +----------------------------------------------------------------------
+*/
+
+namespace {%app%}\{%layer%};
+
+/**
+* 服务类
+* @author  @小小只 <soinco@qq.com>
+* @version 1.0.0
+* @date    {%date%}
+* @desc    description
+* @param   [array]
+*/
+class {%suffix%}
+{
+    /**
+    * 服务类
+    * @author  @小小只 <soinco@qq.com>
+    * @version 1.0.0
+    * @date    {%date%}
+    * @desc    description
+    * @param   array
+    */
+    
+
+}

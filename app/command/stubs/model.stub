@@ -1,0 +1,68 @@
+<?php
+
+/**
+* +----------------------------------------------------------------------
+* | AdminInterface
+* +----------------------------------------------------------------------
+* | Copyright (c) 2017-{%year%} https://github.com/littlezo All rights reserved.
+* +----------------------------------------------------------------------
+* | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+* +----------------------------------------------------------------------
+* | Author: @小小只 <soinco@qq.com>
+* +----------------------------------------------------------------------
+*/
+
+namespace {%app%}\{%layer%};
+
+use think\Model;
+use think\model\concern\SoftDelete;
+/**
+* 业务模型
+* @author  @小小只 <soinco@qq.com>
+* @version 1.0.0
+* @date    {%date%}
+* @desc    description
+*
+*/
+class {%suffix%} extends Model
+{
+    // 定义主键
+    protected $pk = 'id';
+
+    // 设置当前模型的数据库连接
+    // protected $connection = 'db_config';
+
+    // 设置当前模型对应的完整数据表名称
+    // protected $table = 'goods';
+
+    // 开启自动写入时间戳字段
+    protected $autoWriteTimestamp = true;
+
+    // 关闭自动写入指定字段时间戳写入
+    // protected $updateTime = false;
+
+    // 定义时间戳字段名
+    protected $createTime = 'add_time';
+    protected $updateTime = 'update_time';
+
+    // 设置废弃字段
+    protected $disuse = [];
+
+    // 设置字段自动转换类型
+    protected $type = [
+        'add_time'  =>  'timestamp',
+    ];
+
+    // 软删除定义
+    use SoftDelete;
+    protected $deleteTime = 'del_time';
+
+    // 定义软删除字段的默认值
+    protected $defaultSoftDelete = 0;
+    
+    // 初始化模型
+    public static function init()
+    {
+        parent::init();
+    }
+}
